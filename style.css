@@ -1,0 +1,97 @@
+:root{
+    --bgc: teal;
+    --txtc: white;
+
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: thistle;
+}
+
+.container{
+    height: 50vh;
+    width: 35vw;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-areas: 
+        "image clock clock"
+        "main-links main-links main-links"
+        "sub-links sub-links sub-links";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .75fr .5fr;
+    grid-gap: 10px;
+}
+
+/* Image attributes */
+.image{
+    grid-area: image;
+    height: 25vh;
+    background-color: var(--bgc);
+}
+
+.image img{
+    height: 100%;
+}
+
+/* Clock attributes */
+.clock{
+    grid-area: clock;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgc);
+}
+
+.clock h1{
+    color: var(--txtc);
+
+}
+
+#js_ampm{
+    font-size: 50%;
+}
+
+.clock h2{
+    color: var(--txtc);
+}
+
+.clock h3{
+    color: var(--txtc);
+}
+
+/* Main links attributes */
+.main_links{
+    grid-area: main-links;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgc)
+}
+
+.ml_content{
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    background-color: violet;
+}
+
+/* Sub links attributes */
+.sub_links{
+    grid-area: sub-links;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgc);
+}
+
+.sl_content{
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    background-color: violet;
+}
