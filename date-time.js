@@ -8,11 +8,13 @@ minutes = current_date.getMinutes()
 document.getElementById('js_time').textContent = `${hour.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}`
 
 // AMPM
-ampm_num = current_date.getHours < 12
-ampm_dis = ampm_num ? 'PM' : 'AM'
+if (current_date.getHours() < 12 || 0){
+    ampm_dis = 'AM'
+} else {
+    ampm_dis = 'PM'
+}
 
 document.getElementById('js_ampm').textContent = ampm_dis
-
 
 // Weekday
 weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']

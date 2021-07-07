@@ -1,16 +1,23 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hello!</title>
+    <link rel="icon" type="image/gif" href="images/title_gifs/ori-toor_video-games-inspired-gifs_03.gif"/>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="background_image"></div>
+    <!-- Background blur -->
+    <div class="bg_blur"></div>
+
+    <!-- Main container -->
     <div class="container">
         <!-- Image -->
         <div class="image">
@@ -19,11 +26,16 @@
 
         <!-- Clock -->
         <div class="clock">
-            <h1>
-                <span id="js_time">Time</span> <span id="js_ampm">am</span>
-            </h1>
-            <h3 id="js_weekday">Weekday</h3>
-            <h2 id="js_date">Date</h2>
+            <div class="clock_time">
+                <h1>
+                    <span id="js_time">Time</span> <span id="js_ampm">am</span>
+                </h1>
+            </div>
+            <div class="clock_date">
+                <h3 id="js_weekday">Weekday</h3>
+                &nbsp;
+                <h2 id="js_date">Date</h2>
+            </div>
         </div>
         <script src="date-time.js"></script>
 
@@ -31,23 +43,34 @@
         <div class="main_links">
             <div class="ml_content">
                 <h2>Incode</h2>
-                <a href="https://app.asana.com/0/home/">Asana</a>
-                <a href="https://www.dropbox.com/home/">Dropbox</a>
-                <a href="https://dreamview-my.sharepoint.com/personal/">Onedrive</a>
-                <a href="https://outlook.office365.com/mail/inbox">Outlook</a>
+                &nbsp;
+                
+                <a href="https://app.asana.com/0/home/">&twoheadrightarrow; Asana</a>
+                <a href="https://www.dropbox.com/home/">&twoheadrightarrow; Dropbox</a>
+                <a href="https://dreamview-my.sharepoint.com/personal/">&twoheadrightarrow; Onedrive</a>
+                <a href="https://outlook.office365.com/mail/inbox">&twoheadrightarrow; Outlook</a>
             </div>
             <div class="ml_content">
                 <h2>Frequent</h2>
-                <a href="https://incode-labeller.s3.amazonaws.com/index.html">Labeler</a>
-                <a href="https://www.documentchecker.com/">Keesing</a>
-                <a href="https://regexr.com/">Regexr</a>
-                <a href="https://www.epochconverter.com/">Epoch Time</a>
+                &nbsp;
+                <a href="https://incode-labeller.s3.amazonaws.com/index.html">&twoheadrightarrow; Labeler</a>
+                <a href="https://www.documentchecker.com/">&twoheadrightarrow; Keesing</a>
+                <a href="https://regexr.com/">&twoheadrightarrow; Regexr</a>
+                <a href="https://www.epochconverter.com/">&twoheadrightarrow; Epoch Time</a>
             </div>
             <div class="ml_content">
                 <h2>Trackers</h2>
-                <a href="">ID Status</a>
-                <a href="">Collections</a>
-                <a href="">Client IDs</a>
+                &nbsp;
+                <a href="">&twoheadrightarrow; ID Status</a>
+                <a href="">&twoheadrightarrow; Collections</a>
+                <a href="">&twoheadrightarrow; Client IDs</a>
+            </div>
+            <div class="ml_content">
+                <h2>Dashboards</h2>
+                &nbsp;
+                <a href="https://saas-conference.incodesmile.com/conference">&twoheadrightarrow; SAAS</a>
+                <a href="https://demo-conference.incodesmile.com/conference">&twoheadrightarrow; Demo</a>
+                <a href="https://conference.incodesmile.com/conference">&twoheadrightarrow; Stage</a>
             </div>
         </div>
 
@@ -65,7 +88,7 @@
                 <a href="https://incode.okta.com/app/UserHome">Okta</a>
             </div>
             <div class="sl_content">
-                <a href="">Incode AP1 1</a>
+                <a href="">Incode API 1</a>
                 <a href="">Incode API 2</a>
                 <a href="">Incode API 3</a>
             </div>
