@@ -46,7 +46,6 @@ body{
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    background-color: var(--hgc1);
     background-image: var(--img);
     background-size: cover;
     background-position: center center;
