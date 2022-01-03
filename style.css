@@ -18,13 +18,13 @@ under > about:config */
 } */
 
 :root{
-    --bgc: rgba(14, 14, 14, 0.7);
-    --txtc: white;
-    --hgc1: #18915c;
-    --hgc2: #ebd95d;
-    --lkc: #61c2a1;
+    --bgc: rgba(21, 18, 28, 0.8);
+    --txtc: #DFDEF1;
+    --hgc1: #E38C8F;
+    --hgc2: #ECDDAA;
+    --lkc: #C6AAE8;
     --brr: 10px;
-    --img: url(images/ori-toor_selected-editorials-2019_04.png);
+    --img: url(images/placeholder.png);
 }
 
 * {
@@ -43,12 +43,12 @@ body{
     width: 100%;
 
     position: absolute;
-    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     background-image: var(--img);
-    background-size: cover;
+    background-size: 115%;
     background-position: center center;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@ body{
 
     position: absolute;
 
-    background-color: rgba(34, 34, 34, 0.5);
+    background-color: rgba(21, 18, 28, 0.6);
     backdrop-filter: blur(15px);
 
     z-index: -1;
@@ -99,6 +99,7 @@ body{
     background-image: var(--img);
     background-size: 100%;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /* Clock attributes */
@@ -196,7 +197,6 @@ hr{
 .ml_content h2, .sub_links h2{
     border-bottom: 2px solid;
     border-color: var(--hgc1);
-
 }
 
 .ml_content p, .sl_content p{
