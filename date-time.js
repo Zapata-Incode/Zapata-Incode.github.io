@@ -29,6 +29,6 @@ setInterval(() => {
     month_num = current_date.getMonth()
     year_num = current_date.getFullYear()
 
-    document.getElementById('js_date').textContent = `${months[month_num]} ${day_num.toString().padStart(2,'0')}, ${year_num}`
+    document.getElementById('js_date').textContent = `${months[month_num]} ${day_num.toString().padStart(2,'0')}`//, ${year_num}`
 })
 
